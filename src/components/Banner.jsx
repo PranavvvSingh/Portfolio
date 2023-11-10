@@ -24,7 +24,7 @@ const Banner = () => {
             industry trends. I possess a strong understanding of data structures
             and algorithms, allowing me to excel in problem-solving.
           </p>
-          <div className="mt-1">
+          {/* <div className="mt-1">
             <div className="flex space-x-3">
               <div className="w-9 h-9 bg-black rounded-full flex justify-center items-center">
                 <i className="fa-brands fa-linkedin-in fa-l text-white" />
@@ -39,9 +39,9 @@ const Banner = () => {
                 <i className="fa-solid fa-code fa-l text-white" />
               </div>
             </div>
-          </div>
+          </div> */}
           <button className="mt-2 shadow-md shadow-white bg-black rounded-full text-white px-3 py-1  hover:bg-slate-800">
-            Resume
+            Check Resume
           </button>
         </div>
       </div>

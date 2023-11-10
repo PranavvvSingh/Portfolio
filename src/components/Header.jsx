@@ -7,21 +7,21 @@ const Header = () => {
     >
       <div className="w-1/6 text-white">Portfolio</div>
       <div className="space-x-10 text-white text-lg">
-        <a href="" className="hover:text-orange-600 heading">
+        <a href="" className="hover:text-orange-600 ">
           Home
         </a>
-        <a href="" className="hover:text-orange-600 heading">
+        <a href="" className="hover:text-orange-600 ">
           Skills
         </a>
-        <a href="" className="hover:text-orange-600 heading">
+        <a href="" className="hover:text-orange-600 ">
           Projects
         </a>
-        <a href="" className="hover:text-orange-600 heading">
-          Contact
-        </a>
       </div>
-      <button type="button" className="text-xl w-2/12 text-white">
-        Hire Me
+      <button
+        type="button"
+        className="text-xl w-2/12 text-white hover:text-orange-600"
+      >
+        Contact
       </button>
     </div>
   );
