@@ -14,11 +14,11 @@ const Banner = () => {
       <div className="w-full flex justify-center ps-28 pe-5">
         <div className="">
           <h3 className="text-xl">Hi! I am,</h3>
-          <h1 className="text-5xl font-bold">Pranav Singh</h1>
-          <h2 className="mt-4 text-3xl font-semibold">
+          <h1 className="mt-2 text-5xl font-bold">Pranav Singh</h1>
+          <h2 className="mt-3 text-3xl font-semibold">
             And I am a Full Stack Developer
           </h2>
-          <p className="mt-1 mb-3">
+          <p className="mt-1 mb-3 tracking-wider">
             Passionate about designing efficient web applications and committed
             to staying updated with the latest technologies in development and
             industry trends. I possess a strong understanding of data structures
