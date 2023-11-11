@@ -45,7 +45,6 @@ const Contact = () => {
               onChange={(e) => setName(e.target.value)}
               placeholder="Your Name"
               className="bg-transparent border border-neutral-700 rounded-lg p-3"
-              required
             />
             <input
               type="email"

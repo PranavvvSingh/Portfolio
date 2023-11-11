@@ -1,10 +1,13 @@
-function Card({ name, description, tech }) {
+import arcade from '../assets/arcade2.png'
+import disease from '../assets/diseasechecker2.png'
+import medinfo from '../assets/medinfo.png'
+function Card({ name, description, tech, picture }) {
   return (
     <div className="w-80 rounded-xl p-5 shadow-md bg-neutral-950">
       <img
-        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+        src={picture}
         alt=""
-        style={{ width: "280px", height: "180px" }}
+        style={{ width: "280px", height: "150px" }}
         className="rounded-xl"
       />
       <div className="flex flex-wrap justify-start gap-2 mt-4 text-black">
@@ -43,6 +46,7 @@ const Projects = () => {
           description="A complete full stack Arcade gaming site which allows users to sign-in & enjoy classic arcade
 games. It records user information and their respective scores across all games."
           tech={["Javascript", "Node Js", "Express", "MongoDB"]}
+          picture={arcade}
         />
         <Card
           name="Medinfo"
@@ -56,12 +60,14 @@ advanced healthcare chatbot for users."
             "Python",
             "Deep Learning",
           ]}
+          picture={medinfo}
         />
         <Card
           name="Disease Checker"
           description=" A machine learning interactive web application which predicts Heart Disease & Diabetes
 in a patient using classification techniques."
           tech={["Streamlit", "Python", "Machine Learning"]}
+          picture={disease}
         />
       </div>
     </div>

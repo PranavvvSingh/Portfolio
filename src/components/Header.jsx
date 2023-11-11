@@ -17,12 +17,9 @@ const Header = () => {
           Projects
         </a>
       </div>
-      <button
-        type="button"
-        className="text-xl w-2/12 text-white hover:text-orange-600"
-      >
-        Contact
-      </button>
+      <div className="text-xl w-2/12 text-white hover:text-orange-600 text-right">
+        <a href="">Contact</a>
+      </div>
     </div>
   );
 }
