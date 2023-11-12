@@ -1,5 +1,23 @@
 import cover from "../assets/cover.svg";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 const Banner = () => {
+  const element=useRef(null)
+   useEffect(() => {
+     const typed = new Typed(element.current, {
+       strings: ["Frontend Developer", "Full Stack Developer"],
+       startDelay: 100,
+       typeSpeed: 50,
+       backSpeed: 50,
+       backDelay: 500,
+       loop: true,
+       showCursor: false
+     });
+     return () => {
+       typed.destroy();
+     };
+   }, []);
+
   return (
     <div
       style={{
@@ -17,7 +35,7 @@ const Banner = () => {
           <h3 className="text-xl">Hi! I am,</h3>
           <h1 className="mt-2 text-5xl font-bold">Pranav Singh</h1>
           <h2 className="mt-3 text-3xl font-semibold">
-            And I am a Full Stack Developer
+            And I am a <span ref={element}></span> 
           </h2>
           <p className="mt-1 mb-3 tracking-wider">
             Passionate about designing efficient web applications and committed
