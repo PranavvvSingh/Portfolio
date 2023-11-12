@@ -28,7 +28,7 @@ const Contact = () => {
     setEmail("");
   };
   return (
-    <>
+    <div id='contact'>
       <div className="flex flex-col items-center mt-32 m-10">
         <h1 className="text-4xl">Contact</h1>
         <p className="text-xl mt-5">Wanna connect? Nigga hit me up.</p>
@@ -77,7 +77,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

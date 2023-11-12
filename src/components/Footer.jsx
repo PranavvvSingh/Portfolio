@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <div className="bg-neutral-950 mt-16">
+    <div
+      className=" mt-16"
+      style={{ background: "rgba(5,6,20,1)" }}
+    >
       <div className="flex flex-col w-11/12 mx-auto items-center pt-12 pb-10 gap-8">
         <div className="text-l text-orange-600">PRANAV SINGH</div>
         <div className="flex gap-20 text-xl">

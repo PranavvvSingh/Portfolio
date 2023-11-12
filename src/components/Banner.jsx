@@ -10,6 +10,7 @@ const Banner = () => {
         backgroundPositionY: "center",
       }}
       className="flex mt-12 pt-5 pb-5 items-center text-white"
+      id='home'
     >
       <div className="w-full flex justify-center ps-28 pe-5">
         <div className="">

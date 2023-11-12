@@ -1,5 +1,5 @@
-import arcade from '../assets/arcade2.png'
-import disease from '../assets/diseasechecker2.png'
+import arcade from '../assets/arcade.png'
+import disease from '../assets/diseasechecker.png'
 import medinfo from '../assets/medinfo.png'
 function Card({ name, description, tech, picture }) {
   return (
@@ -32,7 +32,7 @@ function Card({ name, description, tech, picture }) {
 }
 const Projects = () => {
   return (
-    <div className="mt-32">
+    <div className="mt-32" id="projects">
       <div className="flex flex-col items-center m-10">
         <h1 className="text-4xl">Projects</h1>
         <p className="text-xl mt-5">

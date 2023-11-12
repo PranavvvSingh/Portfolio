@@ -35,8 +35,8 @@ function Techimage({src, text}){
 
 const Skills = () => {
   return (
-    <>
-      <div className="flex flex-col items-center mt-32 m-12">
+    <div id="skills">
+      <div className="flex flex-col items-center   m-12">
         <h1 className="text-4xl">Skills</h1>
         <p className="text-xl mt-5">
           Here are some of the skills I have acquired over the years.
@@ -86,7 +86,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
