@@ -1,12 +1,20 @@
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import { DevTool } from "@hookform/devtools";
 
 
 const Contact = () => {
   const form = useForm();
   const {register, handleSubmit, formState:{errors}, reset}=form;
-
+  const notify = () => {
+    toast.success("Message Sent", {
+      position: toast.POSITION.BOTTOM_RIGHT,
+      theme: 'dark',
+      className: "bg-neutral-900 text-white ",
+    });
+  };
   const sendEmail = () => {
     // e.preventDefault();
     emailjs
@@ -14,6 +22,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result);
+          notify();
         },
         (error) => {
           console.log(error.text);
@@ -81,6 +90,7 @@ const Contact = () => {
         </form>
         {/* <DevTool control={control} /> */}
       </div>
+      <ToastContainer/>
     </div>
   );
 };
