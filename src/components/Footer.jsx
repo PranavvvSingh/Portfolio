@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div
-      className=" mt-16"
+      className=" mt-24"
       style={{ background: "rgba(5,6,20,1)" }}
     >
       <div className="flex flex-col w-11/12 mx-auto items-center pt-12 pb-10 gap-8">

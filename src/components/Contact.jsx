@@ -38,8 +38,13 @@ const Contact = () => {
       </div>
 
       <div className="w-1/2 mx-auto bg-neutral-950 p-8 rounded-xl border border-rose-700 shadow-md shadow-rose-700">
-        <form ref={form} onSubmit={handleSubmit(sendEmail)} noValidate>
-          <div className="grid gap-4">
+        <form
+          ref={form}
+          onSubmit={handleSubmit(sendEmail)}
+          noValidate
+          className="grid gap-4"
+        >
+          {/* <div> */}
             <h1 className="text-xl text-neutral-400">📩 Email Me</h1>
             <input
               type="text"
@@ -86,11 +91,11 @@ const Contact = () => {
             >
               Send
             </button>
-          </div>
+          {/* </div> */}
         </form>
         {/* <DevTool control={control} /> */}
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 };

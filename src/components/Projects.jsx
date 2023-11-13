@@ -40,7 +40,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center w-10/12 mx-auto gap-5">
+      <div className="flex flex-wrap justify-evenly w-10/12 mx-auto gap-5">
         <Card
           name="Arcade Arena"
           description="A complete full stack Arcade gaming site which allows users to sign-in & enjoy classic arcade
