@@ -1,5 +1,6 @@
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import profile from '../assets/profile.png'
 const Banner = () => {
   const element = useRef(null);
   useEffect(() => {
@@ -50,7 +51,7 @@ const Banner = () => {
       </div>
       <div className="">
         <img
-          src="./src/assets/profile.png"
+          src={profile}
           alt=""
           style={{ maxHeight: '300px' }}
         />
