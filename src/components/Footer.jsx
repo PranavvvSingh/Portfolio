@@ -6,20 +6,6 @@ const Footer = () => {
     >
       <div className="flex flex-col w-11/12 mx-auto items-center pt-12 pb-10 gap-8">
         <div className="text-l text-orange-600">PRANAV SINGH</div>
-        {/* <div className="flex gap-20 text-xl">
-          <a href="#home" className="hover:text-orange-600">
-            Home
-          </a>
-          <a href="#skills" className="hover:text-orange-600">
-            Skills
-          </a>
-          <a href="#projects" className="hover:text-orange-600">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-orange-600">
-            Contact
-          </a>
-        </div> */}
         <div className="space-x-12">
           <a
             href="https://www.linkedin.com/in/pranavv-singh/"

@@ -19,10 +19,10 @@ const Banner = () => {
 
   return (
     <div
-      className="flex flex-wrap-reverse mt-12 pt-5 pb-5  items-center text-white"
+      className="flex flex-wrap-reverse mt-12 pt-5 pb-5 justify-evenly items-center text-white"
       id="home"
     >
-      <div className="sm:w-2/3 mx-auto sm:mt-5 md:mt-0 md:w-1/2">
+      <div className="w-1/2">
         {/* <div> */}
         <h3 className="text-xl">Hi! I am,</h3>
         <h1 className="mt-2 text-5xl font-bold">Pranav Singh</h1>
@@ -48,11 +48,11 @@ const Banner = () => {
         </button>
         {/* </div> */}
       </div>
-      <div className="mx-auto">
+      <div className="">
         <img
           src="./src/assets/profile.png"
           alt=""
-          style={{ height: "300px" }}
+          style={{ maxHeight: '300px' }}
         />
       </div>
     </div>

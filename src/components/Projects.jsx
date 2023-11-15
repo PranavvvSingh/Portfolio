@@ -3,7 +3,7 @@ import disease from '../assets/diseasechecker.png'
 import medinfo from '../assets/medinfo.png'
 function Card({ name, description, tech, picture }) {
   return (
-    <div className="w-80 rounded-xl p-5 shadow-md bg-neutral-950">
+    <div className="w-80 rounded-xl p-5 shadow-md shadow-neutral-800 bg-neutral-950">
       <img
         src={picture}
         alt=""
