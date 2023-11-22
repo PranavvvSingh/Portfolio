@@ -1,6 +1,7 @@
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
-import profile from '../assets/profile.png'
+import React, { useEffect, useRef } from "react";
+import profile from "../assets/profile.png";
+
 const Banner = () => {
   const element = useRef(null);
   useEffect(() => {
@@ -42,19 +43,18 @@ const Banner = () => {
           problem-solving.
         </p>
         <button className="mt-2 shadow-md shadow-orange-700 bg-black rounded-full text-inherit px-3 py-1">
-          <a href="https://drive.google.com/file/d/1nZNI15kuqjG72603lqxanopCYrJRw9OT/view?usp=sharing"
-          target="_blank" rel='noreferrer noopener'>
+          <a
+            href="https://drive.google.com/file/d/1qgGg8qL2YuKA7-nCsN89QIYJ_k1TUGrs/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Check Resume
           </a>
         </button>
         {/* </div> */}
       </div>
       <div className="">
-        <img
-          src={profile}
-          alt=""
-          style={{ maxHeight: '300px' }}
-        />
+        <img src={profile} alt="" style={{ maxHeight: "300px" }} />
       </div>
     </div>
   );

@@ -19,6 +19,7 @@ import vscode from '../assets/vscode.png'
 import postman from "../assets/postman.png";
 import java from "../assets/java.png";
 import python from "../assets/python.png";
+import React from 'react'
 
 function Techimage({src, text}){
   return (

@@ -1,6 +1,8 @@
-import arcade from '../assets/arcade.png'
-import disease from '../assets/diseasechecker.png'
-import medinfo from '../assets/medinfo.png'
+import arcade from "../assets/arcade.png";
+import disease from "../assets/diseasechecker.png";
+import medinfo from "../assets/medinfo.png";
+import clipit from "../assets/clipit.png";
+import React from "react";
 function Card({ name, description, tech, picture }) {
   return (
     <div className="w-80 rounded-xl p-5 shadow-md shadow-neutral-800 bg-neutral-950">
@@ -41,6 +43,13 @@ const Projects = () => {
       </div>
 
       <div className="flex flex-wrap justify-evenly w-10/12 mx-auto gap-5">
+        <Card
+          name="ClipIt"
+          description="A fully responsive video streaming platform designed using the youtube api to deliver a seamless
+experience."
+          tech={["React", "Typescript", "Tailwindcss"]}
+          picture={clipit}
+        />
         <Card
           name="Arcade Arena"
           description="A complete full stack Arcade gaming site which allows users to sign-in & enjoy classic arcade
