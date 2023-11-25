@@ -1,13 +1,15 @@
 import { Link } from 'react-scroll';
 import '../App.css'
+import React from 'react';
+
 const Header = () => {
   return (
     <div
       style={{ backgroundColor: "#050614" }}
       className="sticky top-0 z-10 flex justify-between ps-20 pe-20 pt-5 pb-5 border-b-1 "
     >
-      <div className="w-1/6 text-white">📄Portfolio</div>
-      <div className="space-x-10 text-white text-lg">
+      <div className="text-white text-sm md:text-lg">📄Portfolio</div>
+      <div className="hidden sm:block space-x-10 text-white md:text-lg">
         <Link
           to="home"
           spy={true}
@@ -42,7 +44,7 @@ const Header = () => {
           Projects
         </Link>
       </div>
-      <div className="text-xl w-2/12 text-white  text-right">
+      <div className="text-l sm:text-xl text-white  text-right">
         <Link
           to="contact"
           spy={true}

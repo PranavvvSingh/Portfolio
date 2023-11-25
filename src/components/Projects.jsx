@@ -5,12 +5,11 @@ import clipit from "../assets/clipit.png";
 import React from "react";
 function Card({ name, description, tech, picture }) {
   return (
-    <div className="w-80 rounded-xl p-5 shadow-md shadow-neutral-800 bg-neutral-950">
+    <div className="w-[310px] md:w-[320px] rounded-xl p-5 shadow-md shadow-neutral-800 bg-neutral-950">
       <img
         src={picture}
         alt=""
-        style={{ width: "280px", height: "150px" }}
-        className="rounded-xl"
+        className="rounded-xl h-[150px] md:h-[160px] aspect-[16/9] mx-auto"
       />
       <div className="flex flex-wrap justify-start gap-2 mt-4 text-black">
         {tech.map((element, index) => (
@@ -37,9 +36,8 @@ const Projects = () => {
     <div className="mt-32" id="projects">
       <div className="flex flex-col items-center m-10">
         <h1 className="text-4xl">Projects</h1>
-        <p className="text-xl mt-5">
-          I have designed a multitude of projects. <br/> I present a curated
-          collection of them for your consideration.
+        <p className="text-xl mt-5 text-center">
+          Here is a curated collection of my projects.
         </p>
       </div>
 

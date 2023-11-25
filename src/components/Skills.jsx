@@ -23,11 +23,11 @@ import React from 'react'
 
 function Techimage({src, text}){
   return (
-    <div className='flex gap-1 items-center px-3 py-2 rounded-xl border border-neutral-500'>
+    <div className="flex gap-1 items-center px-3 py-2 rounded-xl border border-neutral-500">
       <img
         src={src}
-        alt="nodejs"
-        style={{ height: "25px", width: "25px" }}
+        alt="tech-image"
+        className="h-[22px] md:h-[25px] "
       />
       <p>{text}</p>
     </div>
@@ -39,25 +39,25 @@ const Skills = () => {
     <div id="skills">
       <div className="flex flex-col items-center   m-12">
         <h1 className="text-4xl">Skills</h1>
-        <p className="text-xl mt-5">
+        <p className="text-xl mt-5 text-center">
           Here are some of the skills I have acquired over the years.
         </p>
       </div>
       <div className="flex flex-wrap justify-center w-11/12 mx-auto gap-8">
-        <div className="w-80  rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
+        <div className="w-[300px] md:w-[305px] lg:w-[320px] rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
           <div className="flex justify-center">
             <h1 className="text-3xl text-neutral-400">Backend</h1>
           </div>
           <div className="flex flex-wrap justify-center gap-3 mt-5">
             <Techimage src={node} text="Node Js" />
             <Techimage src={express} text="Express Js" />
-            <Techimage src={spring} text="Spring Boot" />
             <Techimage src={mongodb} text="MongoDB" />
             <Techimage src={firebase} text="Firebase" />
             <Techimage src={postgre} text="Postresql" />
+            <Techimage src={spring} text="Spring Boot" />
           </div>
         </div>
-        <div className="w-96 rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
+        <div className="w-[340px] md:w-[350px] lg:w-[370px] rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
           <div className="flex justify-center">
             <h1 className="text-3xl text-neutral-400">Frontend</h1>
           </div>
@@ -74,7 +74,7 @@ const Skills = () => {
             <Techimage src={tailwind} text="Tailwind" />
           </div>
         </div>
-        <div className="w-80 rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
+        <div className="w-[300px] md:w-[305px] lg:w-[320px] rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
           <div className="flex justify-center">
             <h1 className="text-3xl text-neutral-400">Others</h1>
           </div>

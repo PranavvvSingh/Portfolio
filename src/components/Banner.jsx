@@ -21,14 +21,13 @@ const Banner = () => {
 
   return (
     <div
-      className="flex flex-wrap-reverse mt-12 pt-5 pb-5 justify-evenly items-center text-white"
+      className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse mt-4 md:mt-12 pt-5 pb-5 justify-evenly items-center text-white px-5"
       id="home"
     >
-      <div className="w-1/2">
-        {/* <div> */}
+      <div className="w-[400px] sm:w-[500px] md:w-[600px] mt-10 md:mt-0">
         <h3 className="text-xl">Hi! I am,</h3>
-        <h1 className="mt-2 text-5xl font-bold">Pranav Singh</h1>
-        <h2 className="mt-3 text-3xl font-semibold">
+        <h1 className="mt-2 text-4xl md:text-5xl font-bold">Pranav Singh</h1>
+        <h2 className="mt-3 text-2xl md:text-3xl font-semibold">
           And I am a{" "}
           <span
             ref={element}
@@ -51,10 +50,9 @@ const Banner = () => {
             Check Resume
           </a>
         </button>
-        {/* </div> */}
       </div>
-      <div className="">
-        <img src={profile} alt="" style={{ maxHeight: "300px" }} />
+      <div className="w-[240px] sm:w-[260px] md:w-[300px]">
+        <img src={profile} alt="profile-picture" />
       </div>
     </div>
   );
