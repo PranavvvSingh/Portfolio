@@ -37,31 +37,31 @@ function Techimage({src, text}){
 const Skills = () => {
   return (
     <div id="skills">
-      <div className="flex flex-col items-center   m-12">
+      <div className="flex flex-col items-center m-12">
         <h1 className="text-4xl">Skills</h1>
-        <p className="text-xl mt-5 text-center">
+        <p className="text-lg sm:text-xl mt-5 text-center">
           Here are some of the skills I have acquired over the years.
         </p>
       </div>
       <div className="flex flex-wrap justify-center w-11/12 mx-auto gap-8">
-        <div className="w-[300px] md:w-[305px] lg:w-[320px] rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
+        <div className="w-[300px] md:w-[305px] lg:w-[320px] rounded-2xl p-3 sm:p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
           <div className="flex justify-center">
-            <h1 className="text-3xl text-neutral-400">Backend</h1>
+            <h1 className="text-2xl sm:text-3xl text-neutral-400">Backend</h1>
           </div>
-          <div className="flex flex-wrap justify-center gap-3 mt-5">
+          <div className="flex flex-wrap justify-center gap-3 mt-2 sm:mt-5">
             <Techimage src={node} text="Node.js" />
             <Techimage src={express} text="Express.js" />
             <Techimage src={mongodb} text="MongoDB" />
             <Techimage src={firebase} text="Firebase" />
-            <Techimage src={postgre} text="Postresql" />
+            <Techimage src={postgre} text="Postgresql" />
             <Techimage src={spring} text="Spring Boot" />
           </div>
         </div>
-        <div className="w-[340px] md:w-[350px] lg:w-[370px] rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
+        <div className="w-[340px] md:w-[350px] lg:w-[370px] rounded-2xl p-3 sm:p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
           <div className="flex justify-center">
-            <h1 className="text-3xl text-neutral-400">Frontend</h1>
+            <h1 className="text-2xl sm:text-3xl text-neutral-400">Frontend</h1>
           </div>
-          <div className="flex flex-wrap justify-center gap-3 mt-5">
+          <div className="flex flex-wrap justify-center gap-3 mt-2 sm:mt-5">
             <Techimage src={html} text="HTML" />
             <Techimage src={css} text="CSS" />
             <Techimage src={redux} text="Redux" />
@@ -74,11 +74,11 @@ const Skills = () => {
             <Techimage src={tailwind} text="Tailwind" />
           </div>
         </div>
-        <div className="w-[300px] md:w-[305px] lg:w-[320px] rounded-2xl p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
+        <div className="w-[300px] md:w-[305px] lg:w-[320px] rounded-2xl p-3 sm:p-5 border border-rose-700 shadow-md shadow-rose-700 bg-neutral-950">
           <div className="flex justify-center">
-            <h1 className="text-3xl text-neutral-400">Others</h1>
+            <h1 className="text-2xl sm:text-3xl text-neutral-400">Others</h1>
           </div>
-          <div className="flex flex-wrap justify-center gap-3 mt-5">
+          <div className="flex flex-wrap justify-center gap-3 mt-2 sm:mt-5">
             <Techimage src={github} text="Github" />
             <Techimage src={vscode} text="VS Code" />
             <Techimage src={java} text="Java" />

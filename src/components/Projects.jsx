@@ -36,7 +36,7 @@ const Projects = () => {
     <div className="mt-32" id="projects">
       <div className="flex flex-col items-center m-10">
         <h1 className="text-4xl">Projects</h1>
-        <p className="text-xl mt-5 text-center">
+        <p className="text-lg sm:text-xl mt-5 text-center">
           Here is a curated collection of my projects.
         </p>
       </div>
