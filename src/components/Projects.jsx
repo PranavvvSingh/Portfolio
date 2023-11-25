@@ -38,7 +38,8 @@ const Projects = () => {
       <div className="flex flex-col items-center m-10">
         <h1 className="text-4xl">Projects</h1>
         <p className="text-xl mt-5">
-          I have designed a shit tonne of projects. Here are some of them.
+          I have designed a multitude of projects. I present a curated
+          collection of them for your consideration.
         </p>
       </div>
 
