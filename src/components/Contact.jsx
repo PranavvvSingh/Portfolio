@@ -55,9 +55,8 @@ const Contact = () => {
         ref={formjs}
         onSubmit={handleSubmit(sendEmail)}
         noValidate
-        className="grid gap-4 w-[370px] md:w-[400px] lg:w-2/5 mx-auto md:bg-neutral-950 p-8 rounded-xl border border-rose-700 shadow-md shadow-rose-700"
+        className="grid gap-4 w-[300px] sm:w-[370px] md:w-[400px] lg:w-2/5 mx-auto md:bg-neutral-950 p-5 sm:p-8 rounded-xl border border-rose-700 shadow-md shadow-rose-700"
       >
-        {/* <div> */}
         <h1 className="text-xl text-neutral-400">📩 Email Me</h1>
         <input
           type="text"
@@ -104,10 +103,8 @@ const Contact = () => {
         >
           Send
         </button>
-        {/* </div> */}
       </form>
       {/* <DevTool control={control} /> */}
-      {/* </div> */}
       <ToastContainer />
     </div>
   );

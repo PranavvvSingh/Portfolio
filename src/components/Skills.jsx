@@ -49,8 +49,8 @@ const Skills = () => {
             <h1 className="text-3xl text-neutral-400">Backend</h1>
           </div>
           <div className="flex flex-wrap justify-center gap-3 mt-5">
-            <Techimage src={node} text="Node Js" />
-            <Techimage src={express} text="Express Js" />
+            <Techimage src={node} text="Node.js" />
+            <Techimage src={express} text="Express.js" />
             <Techimage src={mongodb} text="MongoDB" />
             <Techimage src={firebase} text="Firebase" />
             <Techimage src={postgre} text="Postresql" />
