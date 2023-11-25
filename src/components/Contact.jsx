@@ -45,7 +45,7 @@ const Contact = () => {
     <div id="contact">
       <div className="flex flex-col items-center mt-32 m-10">
         <h1 className="text-4xl">Contact</h1>
-        <p className="text-xl mt-5">Want to connect with me? Please fill the form below and I will reach out to your soon.</p>
+        <p className="text-xl mt-5">Want to connect with me? <br/> Please fill the form below and I will reach out to your soon.</p>
       </div>
 
       <div className="w-2/5 mx-auto md:bg-neutral-950 p-8 rounded-xl border border-rose-700 shadow-md shadow-rose-700">
