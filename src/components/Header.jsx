@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div
       style={{ backgroundColor: "#050614" }}
-      className="sticky top-0 z-10 flex justify-between px-3 sm:px-20 py-3 sm:py-5 border-b-1 "
+      className="sticky top-0 z-10 flex justify-between px-3 sm:px-20 py-5 border-b-1 "
     >
       <div className="text-white text-sm md:text-lg">📄Portfolio</div>
       <div className="hidden sm:block space-x-10 text-white md:text-lg">

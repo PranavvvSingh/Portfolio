@@ -50,7 +50,6 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* <div className="w-2/5 mx-auto md:bg-neutral-950 p-8 rounded-xl border border-rose-700 shadow-md shadow-rose-700"> */}
       <form
         ref={formjs}
         onSubmit={handleSubmit(sendEmail)}
