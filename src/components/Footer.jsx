@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="border-t-[1px] border-neutral-900 mt-24" style={{ background: "rgba(5,6,20,1)" }}>
       <div className="flex flex-col w-11/12 mx-auto items-center pt-12 pb-10 gap-8">
-        <p className="text-sm sm:text-base md:text-l text-orange-600">
+        <p className="text-sm sm:text-base md:text-l text-orange-600 text-center">
           PRANAV SINGH
         </p>
         <div className="space-x-12">

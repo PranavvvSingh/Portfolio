@@ -59,9 +59,9 @@ const Contact = () => {
         <h1 className="text-xl text-neutral-400">📩 Email Me</h1>
         <input
           type="text"
-          // name="name"
+          size={1}
           placeholder="Your Name"
-          className="bg-transparent border border-neutral-700 rounded-lg p-3 min-w-[100px]"
+          className="bg-transparent border border-neutral-700 rounded-lg p-3"
           {...register("name", {
             required: "Name is required",
           })}
@@ -69,7 +69,7 @@ const Contact = () => {
         <p className="text-red-600 mt-0">{errors.name?.message}</p>
         <input
           type="email"
-          // name="email"
+          size={1}
           placeholder="Your Email"
           className="bg-transparent border border-neutral-700 rounded-lg p-3"
           {...register("email", {
@@ -84,6 +84,7 @@ const Contact = () => {
         <p className="text-red-600 mt-0">{errors.email?.message}</p>
         <textarea
           // name="message"
+          size={1}
           id="message"
           placeholder="Your Message"
           className="bg-transparent border border-neutral-700 rounded-lg p-3"
@@ -95,6 +96,7 @@ const Contact = () => {
         <button
           type="submit"
           value="Send"
+          size={1}
           className="p-3 rounded-lg"
           style={{
             background: `linear-gradient(166deg, rgba(253,29,29,1) 20%, rgba(224,153,54,1) 100%)`,
