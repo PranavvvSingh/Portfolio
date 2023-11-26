@@ -24,17 +24,17 @@ const Banner = () => {
       className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse mt-4 md:mt-12 pt-5 pb-5 justify-evenly items-center text-white px-5"
       id="home"
     >
-      <div className="w-[330px] sm:w-[500px] md:w-[600px] mt-10 md:mt-0">
+      <div className="w-[330px] sm:w-[500px] md:w-[600px] mt-10 md:mt-0 text-center sm:text-left">
         <h3 className="text-xl">Hi! I am,</h3>
         <h1 className="mt-2 text-4xl md:text-5xl font-bold">Pranav Singh</h1>
         <h2 className="mt-3 text-2xl md:text-3xl font-semibold">
-          And I am a{" "}
+          I am a{" "}
           <span
             ref={element}
             className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500"
           ></span>
         </h2>
-        <p className="mt-1 mb-3 tracking-wider">
+        <p className="mt-1 mb-3 tracking-widest sm:tracking-wider text-neutral-200">
           {`I'm`} passionate about designing efficient web applications and
           committed to staying updated with the latest technologies in
           development and industry trends. I possess a strong understanding of

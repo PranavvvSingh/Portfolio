@@ -14,7 +14,6 @@ function App() {
         style={{
           background: `linear-gradient(166deg, rgba(5,6,20,1) 20%, rgba(253,29,29,1) 55%, rgba(5,6,20,1) 80%)`,
         }}
-        className="overflow-x-hidden"
       >
         <Header />
         <Banner />

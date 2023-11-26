@@ -5,7 +5,7 @@ import clipit from "../assets/clipit.png";
 import React from "react";
 function Card({ name, description, tech, picture }) {
   return (
-    <div className="w-[310px] md:w-[320px] rounded-xl p-5 shadow-md shadow-neutral-800 bg-neutral-950">
+    <div className="w-[310px] md:w-[320px] rounded-xl p-5 border border-orange-500 bg-neutral-950 shadow-md shadow-orange-500">
       <img
         src={picture}
         alt=""
@@ -34,9 +34,9 @@ function Card({ name, description, tech, picture }) {
 const Projects = () => {
   return (
     <div className="mt-32" id="projects">
-      <div className="flex flex-col items-center m-10">
+      <div className="flex flex-col items-center mt-32 mb-8">
         <h1 className="text-4xl">Projects</h1>
-        <p className="text-lg sm:text-xl mt-5 text-center">
+        <p className="text-lg sm:text-xl mt-5 text-center text-neutral-200">
           Here is a curated collection of my projects.
         </p>
       </div>

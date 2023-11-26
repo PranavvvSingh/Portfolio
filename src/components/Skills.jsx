@@ -29,7 +29,7 @@ function Techimage({src, text}){
         alt="tech-image"
         className="h-[22px] md:h-[25px] "
       />
-      <p>{text}</p>
+      <p className='text-neutral-200'>{text}</p>
     </div>
   );
 }
@@ -37,9 +37,9 @@ function Techimage({src, text}){
 const Skills = () => {
   return (
     <div id="skills">
-      <div className="flex flex-col items-center m-12">
+      <div className="flex flex-col items-center mt-32 mb-8">
         <h1 className="text-4xl">Skills</h1>
-        <p className="text-lg sm:text-xl mt-5 text-center">
+        <p className="text-lg sm:text-xl mt-5 text-center text-neutral-200">
           Here are some of the skills I have acquired over the years.
         </p>
       </div>

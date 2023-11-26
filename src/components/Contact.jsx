@@ -45,8 +45,8 @@ const Contact = () => {
     <div id="contact">
       <div className="flex flex-col items-center mt-32 m-10">
         <h1 className="text-4xl">Contact</h1>
-        <p className="text-xl mt-5 text-center">
-          Want to connect with me? Please fill the form below.
+        <p className="text-xl mt-5 text-center text-neutral-200">
+          Want to connect? Please fill the form below.
         </p>
       </div>
 
@@ -83,7 +83,6 @@ const Contact = () => {
         />
         <p className="text-red-600 mt-0">{errors.email?.message}</p>
         <textarea
-          // name="message"
           size={1}
           id="message"
           placeholder="Your Message"

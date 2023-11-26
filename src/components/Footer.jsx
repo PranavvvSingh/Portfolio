@@ -37,7 +37,7 @@ const Footer = () => {
             <i className="fa-solid fa-code fa-lg md:fa-xl text-white hover:text-orange-600" />
           </a>
         </div>
-        <p className="text-sm sm:text-base mt-5">
+        <p className="text-xs sm:text-base mt-5 text-center">
           @2023 Pranav Singh. All Rights Reserved.
         </p>
       </div>
