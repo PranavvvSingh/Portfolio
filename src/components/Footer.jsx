@@ -13,28 +13,28 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-linkedin-in fa-sm lg md:fa-xl text-white hover:text-orange-600" />
+            <i className="fa-brands fa-linkedin-in fa-lg md:fa-xl text-white hover:text-orange-600" />
           </a>
           <a
             href="https://github.com/PranavvvSingh"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-github fa-sm lg md:fa-xl text-white hover:text-orange-600" />
+            <i className="fa-brands fa-github fa-lg md:fa-xl text-white hover:text-orange-600" />
           </a>
           <a
             href="https://www.instagram.com/purrranav"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-instagram fa-sm lg md:fa-xl text-white hover:text-orange-600" />
+            <i className="fa-brands fa-instagram fa-lg md:fa-xl text-white hover:text-orange-600" />
           </a>
           <a
             href="https://leetcode.com/pranavvalt/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-solid fa-code fa-sm lg md:fa-xl text-white hover:text-orange-600" />
+            <i className="fa-solid fa-code fa-lg md:fa-xl text-white hover:text-orange-600" />
           </a>
         </div>
         <p className="text-sm sm:text-base mt-5">

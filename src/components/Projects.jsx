@@ -9,7 +9,7 @@ function Card({ name, description, tech, picture }) {
       <img
         src={picture}
         alt=""
-        className="rounded-xl h-[150px] md:h-[160px] aspect-[16/9] mx-auto"
+        className="rounded-lg h-[150px] md:h-[160px] aspect-[16/9] mx-auto"
       />
       <div className="flex flex-wrap justify-start gap-2 mt-4 text-black">
         {tech.map((element, index) => (

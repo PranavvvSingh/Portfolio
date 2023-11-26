@@ -61,7 +61,7 @@ const Contact = () => {
           type="text"
           // name="name"
           placeholder="Your Name"
-          className="bg-transparent border border-neutral-700 rounded-lg p-3"
+          className="bg-transparent border border-neutral-700 rounded-lg p-3 min-w-[100px]"
           {...register("name", {
             required: "Name is required",
           })}
