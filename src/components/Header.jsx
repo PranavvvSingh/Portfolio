@@ -20,7 +20,7 @@ const Header = () => {
       <Links
         className={`${
           isOpen ? " translate-y-[30px] " : " translate-y-[-200px] "
-        } md:hidden fixed pt-2 pb-2 translate-x-[-12px] w-full flex flex-col space-y-4 items-center transition-all duration-300 bg-[#050614]/[0.85] text-lg`}
+        } md:hidden fixed pt-2 pb-2 left-0 w-full flex flex-col space-y-4 items-center transition-all duration-300 bg-[#050614]/[0.85] text-lg`}
         action={() => setIsOpen(false)}
       />
       <Links className="hidden md:block space-x-10 text-white text-lg" />
