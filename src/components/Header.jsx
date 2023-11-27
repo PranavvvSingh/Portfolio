@@ -4,23 +4,17 @@ import Links from "./Links";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const iconClassName = isOpen ? "xmark" : "bars";
   return (
     <div
       style={{ backgroundColor: "#050614" }}
       className="sticky top-0 z-10 flex flex-col md:flex-row md:justify-center px-4 py-4 md:px-20 md:py-5 border-b-1"
     >
       <div className="flex justify-end h-[22px] items-center">
-        {isOpen ? (
-          <i
-            className="md:hidden fa-solid fa-xmark fa-xl cursor-pointer text-neutral-300"
-            onClick={() => setIsOpen(!isOpen)}
-          />
-        ) : (
-          <i
-            className="md:hidden fa-solid fa-bars fa-xl cursor-pointer text-neutral-300"
-            onClick={() => setIsOpen(!isOpen)}
-          />
-        )}
+        <i
+          className={`md:hidden fa-solid fa-${iconClassName} fa-xl cursor-pointer text-neutral-300`}
+          onClick={() => setIsOpen(!isOpen)}
+        />
       </div>
 
       <Links
