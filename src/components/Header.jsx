@@ -1,59 +1,34 @@
-import { Link } from "react-scroll";
 import "../App.css";
-import React from "react";
+import React, { useState } from "react";
+import Links from "./Links";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div
       style={{ backgroundColor: "#050614" }}
-      className="sticky top-0 z-10 flex justify-center px-3 sm:px-20 py-5 border-b-1"
+      className="sticky top-0 z-10 flex flex-col md:flex-row md:justify-center px-3 py-3 md:px-20 md:py-5 border-b-1"
     >
-      <div className="hidden sm:block space-x-10 text-white md:text-lg">
-        <Link
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-150}
-          duration={1000}
-          className="hover:text-orange-600"
-          activeStyle={{ borderBottom: "2px solid #ea580c" }}
-        >
-          Home
-        </Link>
-        <Link
-          to="skills"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={1000}
-          className="hover:text-orange-600 "
-          activeStyle={{ borderBottom: "2px solid #ea580c" }}
-        >
-          Skills
-        </Link>
-        <Link
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={1000}
-          className="hover:text-orange-600 "
-          activeStyle={{ borderBottom: "2px solid #ea580c" }}
-        >
-          Projects
-        </Link>
-        <Link
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={1000}
-          className="hover:text-orange-600"
-          activeStyle={{ borderBottom: "2px solid #ea580c" }}
-        >
-          Contact
-        </Link>
+      <div className="flex justify-end h-[22px] items-center">
+        {isOpen ? (
+          <i
+            className="md:hidden fa-solid fa-xmark fa-xl cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+        ) : (
+          <i
+            className="md:hidden fa-solid fa-bars fa-xl cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+        )}
       </div>
+
+      <Links
+        className={`${
+          isOpen ? " translate-y-[30px] " : " translate-y-[-200px] "
+        } md:hidden fixed pt-2 pb-2 translate-x-[-12px] w-full flex flex-col space-y-2 items-center transition-all duration-300 bg-[#050614]/[0.85]`}
+      />
+      <Links className="hidden md:block space-x-10 text-white text-lg" />
     </div>
   );
 };

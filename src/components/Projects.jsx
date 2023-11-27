@@ -5,7 +5,7 @@ import clipit from "../assets/clipit.png";
 import React from "react";
 function Card({ name, description, tech, picture }) {
   return (
-    <div className="w-[310px] md:w-[320px] rounded-xl p-5 border border-orange-500 bg-neutral-950 shadow-md shadow-orange-500">
+    <div className="w-[310px] md:w-[320px] rounded-xl p-5 border border-red-600 bg-neutral-950 shadow shadow-orange-600">
       <img
         src={picture}
         alt=""
