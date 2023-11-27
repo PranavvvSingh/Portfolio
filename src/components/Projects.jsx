@@ -25,7 +25,7 @@ function Card({ name, description, tech, picture }) {
         ))}
       </div>
 
-      <h2 className="mt-3 text-xl">{name}</h2>
+      <h2 className="mt-3 text-xl text-neutral-100">{name}</h2>
       <hr className="h-px mt-1 bg-neutral-800 border-0" />
       <p className="mt-2 text-sm text-neutral-400">{description}</p>
     </div>
@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <div className="mt-32" id="projects">
       <div className="flex flex-col items-center mt-32 mb-8">
-        <h1 className="text-4xl">Projects</h1>
+        <h1 className="text-4xl text-neutral-100">Projects</h1>
         <p className="text-lg sm:text-xl mt-5 text-center text-neutral-200 mx-2">
           Here is a curated collection of my projects.
         </p>

@@ -38,7 +38,7 @@ const Skills = () => {
   return (
     <div id="skills">
       <div className="flex flex-col items-center mt-32 mb-8">
-        <h1 className="text-4xl">Skills</h1>
+        <h1 className="text-4xl text-neutral-100">Skills</h1>
         <p className="text-lg sm:text-xl mt-5 text-center text-neutral-200 mx-2">
           Here are some of the skills I have acquired over the years.
         </p>

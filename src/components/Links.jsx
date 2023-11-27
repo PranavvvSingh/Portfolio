@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import "../App.css";
 import React from "react";
 
-const Links = ({className}) => {
+const Links = ({className, action}) => {
   return (
     <div className={className}>
       <Link
@@ -11,7 +11,8 @@ const Links = ({className}) => {
         smooth={true}
         offset={-150}
         duration={1000}
-        className="hover:text-orange-600 w-min"
+        className="hover:text-orange-600 w-min text-neutral-200"
+        onClick={action}
         activeStyle={{ borderBottom: "2px solid #ea580c" }}
       >
         Home
@@ -22,7 +23,8 @@ const Links = ({className}) => {
         smooth={true}
         offset={-100}
         duration={1000}
-        className="hover:text-orange-600 w-min"
+        className="hover:text-orange-600 w-min text-neutral-200"
+        onClick={action}
         activeStyle={{ borderBottom: "2px solid #ea580c" }}
       >
         Skills
@@ -33,7 +35,8 @@ const Links = ({className}) => {
         smooth={true}
         offset={-100}
         duration={1000}
-        className="hover:text-orange-600 w-min"
+        className="hover:text-orange-600 w-min text-neutral-200"
+        onClick={action}
         activeStyle={{ borderBottom: "2px solid #ea580c" }}
       >
         Projects
@@ -44,7 +47,8 @@ const Links = ({className}) => {
         smooth={true}
         offset={-100}
         duration={1000}
-        className="hover:text-orange-600 w-min"
+        className="hover:text-orange-600 w-min text-neutral-200"
+        onClick={action}
         activeStyle={{ borderBottom: "2px solid #ea580c" }}
       >
         Contact
