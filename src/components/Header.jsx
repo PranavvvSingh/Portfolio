@@ -12,7 +12,7 @@ const Header = () => {
     >
       <div className="flex justify-end h-[22px] items-center">
         <i
-          className={`md:hidden fa-solid fa-${iconClassName} fa-xl cursor-pointer text-neutral-300`}
+          className={`md:hidden fa-solid fa-${iconClassName} fa-xl cursor-pointer text-neutral-300 z-20`}
           onClick={() => setIsOpen(!isOpen)}
         />
       </div>
