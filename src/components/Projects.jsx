@@ -2,6 +2,7 @@ import arcade from "../assets/arcade.png";
 import disease from "../assets/diseasechecker.png";
 import medinfo from "../assets/medinfo.png";
 import clipit from "../assets/clipit.png";
+import petfinder from "../assets/petfinder.png"
 import React from "react";
 function Card({ name, description, tech, picture }) {
   return (
@@ -33,53 +34,66 @@ function Card({ name, description, tech, picture }) {
 }
 const Projects = () => {
   return (
-    <div className="mt-32" id="projects">
-      <div className="flex flex-col items-center mt-32 mb-8">
-        <h1 className="text-4xl text-neutral-100">Projects</h1>
-        <p className="text-lg sm:text-xl mt-5 text-center text-neutral-200 mx-2">
-          Here is a curated collection of my projects.
-        </p>
-      </div>
+     <div className="mt-32" id="projects">
+        <div className="flex flex-col items-center mt-32 mb-8">
+           <h1 className="text-4xl text-neutral-100">Projects</h1>
+           <p className="text-lg sm:text-xl mt-5 text-center text-neutral-200 mx-2">
+              Here is a curated collection of my projects.
+           </p>
+        </div>
 
-      <div className="flex flex-wrap justify-evenly w-10/12 mx-auto gap-5">
-        <Card
-          name="ClipIt"
-          description="A fully responsive video streaming platform designed using the youtube api to deliver a seamless
+        <div className="flex flex-wrap justify-evenly w-10/12 mx-auto gap-5">
+           <Card
+              name="PetFinder"
+              description="A pet ecommerce platform with a robust full-text search engine, personalized filters, secure user authentication, and  allowing logged-in users to save pets as favorites."
+              tech={[
+                 "React",
+                 "Typescript",
+                 "Supabase",
+                 "PostgreSQL",
+                 "Redux",
+                 "Tailwindcss",
+              ]}
+              picture={petfinder}
+           />
+           <Card
+              name="ClipIt"
+              description="A fully responsive video streaming platform designed using the youtube api to deliver a seamless
 experience."
-          tech={["React", "Typescript", "Tailwindcss"]}
-          picture={clipit}
-        />
-        <Card
-          name="Arcade Arena"
-          description="A complete full stack Arcade gaming site which allows users to sign-in & enjoy classic arcade
+              tech={["React", "Typescript", "Tailwindcss"]}
+              picture={clipit}
+           />
+           <Card
+              name="Arcade Arena"
+              description="A complete full stack Arcade gaming site which allows users to sign-in & enjoy classic arcade
 games. It records user information and their respective scores across all games."
-          tech={["Javascript", "Node Js", "Express", "MongoDB"]}
-          picture={arcade}
-        />
-        <Card
-          name="Medinfo"
-          description="A health information syndication platform that aggregates real-time medical content and features an
+              tech={["Javascript", "Node Js", "Express", "MongoDB"]}
+              picture={arcade}
+           />
+           <Card
+              name="Medinfo"
+              description="A health information syndication platform that aggregates real-time medical content and features an
 advanced healthcare chatbot for users."
-          tech={[
-            "React Js",
-            "Redux",
-            "Tailwindcss",
-            "Spring Boot",
-            "Python",
-            "Deep Learning",
-          ]}
-          picture={medinfo}
-        />
-        <Card
-          name="Disease Checker"
-          description=" A machine learning interactive web application which predicts Heart Disease & Diabetes
+              tech={[
+                 "React Js",
+                 "Redux",
+                 "Tailwindcss",
+                 "Spring Boot",
+                 "Python",
+                 "Deep Learning",
+              ]}
+              picture={medinfo}
+           />
+           <Card
+              name="Disease Checker"
+              description=" A machine learning interactive web application which predicts Heart Disease & Diabetes
 in a patient using classification techniques."
-          tech={["Streamlit", "Python", "Machine Learning"]}
-          picture={disease}
-        />
-      </div>
-    </div>
-  );
+              tech={["Streamlit", "Python", "Machine Learning"]}
+              picture={disease}
+           />
+        </div>
+     </div>
+  )
 };
 
 export default Projects;
