@@ -61,7 +61,7 @@ const Contact = () => {
           type="text"
           size={1}
           placeholder="Your Name"
-          className="bg-transparent border border-neutral-700 rounded-lg p-3"
+          className="bg-transparent border border-neutral-700 rounded-lg p-3 text-white"
           {...register("name", {
             required: "Name is required",
           })}
@@ -71,7 +71,7 @@ const Contact = () => {
           type="email"
           size={1}
           placeholder="Your Email"
-          className="bg-transparent border border-neutral-700 rounded-lg p-3"
+          className="bg-transparent border border-neutral-700 rounded-lg p-3 text-white"
           {...register("email", {
             required: "Email is required",
             pattern: {
@@ -86,7 +86,7 @@ const Contact = () => {
           size={1}
           id="message"
           placeholder="Your Message"
-          className="bg-transparent border border-neutral-700 rounded-lg p-3"
+          className="bg-transparent border border-neutral-700 rounded-lg p-3 text-white"
           {...register("message", {
             required: "Message cannot be empty",
           })}
