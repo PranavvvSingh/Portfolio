@@ -1,5 +1,5 @@
 import Typed from "typed.js";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import profile from "../assets/profile.png";
 
 const Banner = () => {
@@ -48,7 +48,7 @@ const Banner = () => {
               }}
            >
               <a
-                 href="https://drive.google.com/file/d/1R7yJpDaJ0UnNbYAdX5dbYpSKFlU8ezx8/view?usp=sharing"
+                 href="https://drive.google.com/file/d/1baWFap1nXL87V7EGjlTbbPidb3czzTvx/view?usp=sharing"
                  target="_blank"
                  rel="noreferrer noopener"
               >
